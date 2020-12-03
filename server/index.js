@@ -6,7 +6,7 @@ const cors = require('cors');
 const halloweenPdfTemplate = require('./documents')
 const christmasPdfTemplate = require('./christmas')
 const darkPdfTemplate = require('./dark')
-const darkPdfTemplate = require('./light')
+const lightPdfTemplate = require('./light')
 
 const app = express();
 
@@ -74,5 +74,5 @@ app.get('/fetch-dark-pdf',(req,res)=>{
 })
 
 
-app.listen(port, ()=>console.log(`Listening on port ${task10}`));
+app.listen(port, ()=>console.log(`Listening on port ${port}`));
 
