@@ -1,7 +1,6 @@
-module.exports = ({ title, task1, task2, task3, task4, task5, task6, task7, task8, task9, task10 }) => {
+module.exports = ({ hTitle, task1, task2, task3, task4, task5, task6, task7, task8, task9, task10 }) => {
    const today = new Date();
 return `
-
 <!doctype html>
 <html>
   <head>
@@ -16,10 +15,11 @@ return `
         margin:0;
         border: 1px solid #eee;
         box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 18px;
+        line-height: 30px;
         font-family: 'Helvetica Neue', 'Helvetica';
         color: #555;
+        width: 20.5cm;
         }
         .margin-top {
         margin-top: 350px;
@@ -35,8 +35,6 @@ return `
            margin-left: auto;
            margin-top:220px;
         }
-
-
         .invoice-box table td {
         padding: 5px;
         vertical-align: top;
@@ -62,7 +60,7 @@ return `
         border-bottom: 1px solid #ddd;
         width:100%;
         padding: 10px 0; 
-        word-wrap:break-word;
+        word-break:break-word;
         font-weight: bold;
         }
         .invoice-box table tr.details td {
@@ -80,7 +78,7 @@ return `
         }
         .item-td-text{
            width:100%; 
-           word-wrap:break-word;
+           word-break:break-word;
            overflow:auto;
         }
         .item{
@@ -106,77 +104,77 @@ return `
            <tr class="heading">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       ${title}
+                      ${hTitle}
                    </div>
                  </td>   
            </tr>
            <tr class="item">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       1. ${task1}
+                       1.&nbsp;${task1}
                    </div>
                  </td>
            </tr>
            <tr class="item">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       2. ${task2}
+                       2.&nbsp;${task2}
                    </div>
                  </td>
            </tr>
            <tr class="item">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       3. ${task3}
+                       3.&nbsp;${task3}
                    </div>
                  </td>
            </tr>
            <tr class="item">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       4. ${task4}
+                     4.&nbsp;${task4}
                    </div>
                  </td>
            </tr>
            <tr class="item">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       5. ${task5}
+                     5.&nbsp;${task5} 
                    </div>
                  </td>
            </tr>
            <tr class="item">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       6. ${task6}
+                       6.&nbsp;${task6}
                    </div>
                  </td>
            </tr>
            <tr class="item">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       7. ${task7}
+                       7.&nbsp;${task7}
                    </div>
                  </td>
            </tr>
            <tr class="item">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       8. ${task8}
+                     8.&nbsp;${task8}
                    </div>
                  </td>
            </tr>
            <tr class="item">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       9. ${task9}
+                     9.&nbsp;${task9}
                    </div>
                  </td>
            </tr>
            <tr class="item">
                <td class="item-td-text">
                    <div style="overflow:auto">
-                       10. ${task10}
+                     10.&nbsp;${task10}
                    </div>
                  </td>
            </tr>
